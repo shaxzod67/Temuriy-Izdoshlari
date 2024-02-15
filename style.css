@@ -1,0 +1,867 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: poppins;
+	font-size: 24px;
+	scroll-behavior: smooth;
+}
+
+header {
+	width: 100%;
+	height: 630px;
+	position: relative;
+	background: url(./image/bc.jpg);
+	/* background-color: rgba(0, 0, 0, 0.6); */
+	background-blend-mode: darken;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+}
+
+nav {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	z-index: 111;
+	background-color: rgba(159, 39, 40, 0.9);
+}
+
+.container {
+	width: 90%;
+	height: auto;
+	margin: auto;
+}
+
+.nav-in {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	font-family: poppins;
+}
+
+.nav-logo {
+	width: 35%;
+	display: flex;
+	align-items: center;
+	padding: 10px 0px;
+}
+
+.nav-logo-1 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.nav-logo img {
+	width: 70px;
+	height: 70px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.nav-logo .vazirlik {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.nav-logo .vazirlik img {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+}
+
+.nav-logo h1 {
+	color: #fff;
+	font-size: 1.2rem;
+	font-family: Roboto-Mono;
+}
+
+nav ul {
+	width: 50%;
+	height: auto;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+ul li a {
+	color: #fff;
+	font-size: 0.8rem;
+	padding: 4px;
+	border-radius: 4px;
+	transition: 0.7s;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	background-color: #fff;
+	color: #9f2728;
+}
+
+label #menu,
+#cancel {
+	position: fixed;
+	font-size: 1.5rem;
+	top: 30px;
+	right: 30px;
+	color: #fff;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+.header {
+	width: 50%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.header h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.header p {
+	font-size: 0.7rem;
+	text-align: center;
+}
+.header button {
+	margin-top: 50px;
+	background: #9f2728;
+	border: 2px solid #9f2728;
+	padding: 2px 15px;
+	border-radius: 6px;
+	transition: 0.7s;
+}
+.header button a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 0.9rem;
+}
+.header button a:hover {
+	color: #9f2728;
+	font-weight: bold;
+}
+.header button:hover {
+	scale: 1.02;
+	background-color: #fff;
+	border: none;
+}
+.header-media {
+	display: none;
+}
+
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 50px;
+	padding: 10px 20px;
+}
+
+.about h2 {
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+	font-family: 'Timmana', sans-serif;
+	color: #9f2728;
+}
+
+.about p {
+	text-align: center;
+	font-family: 'Timmana', sans-serif;
+}
+
+.fan {
+	width: 40%;
+	margin-top: 30px;
+	padding: 0px 30px;
+}
+
+.about-class {
+	width: 100%;
+	height: auto;
+}
+
+.about-class-1 {
+	width: 100%;
+	height: auto;
+}
+
+.about-class-imgs {
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 20px;
+}
+
+.about-class-img {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
+
+.about-class-img img {
+	width: 100%;
+	height: 90%;
+	border-radius: 4px;
+	transition: 0.7s;
+	object-fit: cover;
+}
+
+.about-class-img img:hover {
+	box-shadow: 2px 2px 20px gray;
+	scale: 1.03;
+	position: relative;
+	z-index: 1;
+}
+
+.about-class-1 h2 {
+	text-align: center;
+	font-size: 1.4rem;
+	position: relative;
+	z-index: -2;
+	color: #9f2728;
+}
+
+.links {
+	display: none;
+}
+
+.vedio {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.vedio h2,
+.yutuq_about h2 {
+	font-size: 1.4rem;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #9f2728;
+}
+
+.vediolar {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.vedio_1 {
+	max-width: 500px;
+}
+.vedio_1 iframe{
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+.vedio_2 {
+	max-width: 500px;
+}
+.vedio_2 iframe{
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+.jamoa{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.jamoa-box {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 50px 0px;
+}
+.jamoa_box {
+	width: calc(100% / 3 - 20px);
+	height: auto;
+	padding: 20px 10px;
+	text-align: center;
+	border-radius: 20px;
+	transition: 1s;
+}
+.jamoa_box:hover {
+	background-color: #9f2728;
+	transition: 1s;
+	box-shadow: 1px 1px 25px gray;
+}
+.jamoa_box:hover h2 {
+	color: #fff;
+}
+.jamoa_box:hover p {
+	color: #fff;
+}
+.jamoa h2 {
+	width: 100%;
+	font-size: 1.4rem;
+	color: #9f2728;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.jamoa_box img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.jamoa_box h2 {
+	font-size: 1rem;
+	margin: 20px 0px;
+	font-family: 'Timmana', sans-serif;
+}
+.jamoa_box p {
+	font-size: 0.8rem;
+	margin-bottom: 20px;
+	font-family: 'Timmana', sans-serif;
+}
+.jamoa_box button a {
+	text-decoration: none;
+	color: #9f2728;
+	font-family: 'Timmana', sans-serif;
+}
+.jamoa_box button {
+	padding: 5px 10px;
+	border-radius: 6px;
+	transition: 0.8s;
+	text-align: center;
+	border: 1px solid #9f2728;
+}
+.jamoa_box button:hover a {
+	color: #fff;
+}
+.jamoa_box button:hover {
+	overflow: hidden;
+	background-color: #9f2728;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.chiziq {
+	width: 100%;
+	height: 5px;
+	background-color: #9f2728;
+}
+footer {
+	width: 100%;
+	height: auto;
+	padding: 30px 0px;
+	background-color: #292121;
+}
+.box-1 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.box-1 h2 {
+	font-size: 1.4rem;
+	color: #fff;
+	font-family: 'Times New Roman', Times, serif;
+}
+.box-1 img {
+	width: 40px;
+	height: 40px;
+}
+.box-1 p {
+	font-size: 1rem;
+	color: #ffffff8e;
+	font-family: 'Times New Roman', Times, serif;
+}
+.box-1 p i {
+	color: #9f2728;
+}
+.chiziq-1 {
+	width: 95%;
+	height: 2px;
+	margin: auto;
+	margin-top: 30px;
+	background-color: #ffffffd7;
+}
+.box-1 span {
+	font-size: 0.8rem;
+	margin-top: 20px;
+	font-family: 'Times New Roman', Times, serif;
+	color: gray;
+}
+.box-1 span a {
+	text-decoration: none;
+	font-size: 0.8rem;
+	margin-top: 20px;
+	font-family: 'Times New Roman', Times, serif;
+	color: gray;
+}
+.box-1 span a:hover {
+	color: #fff;
+}
+
+.br {
+	display: none;
+	width: 100%;
+	height: 30px;
+}
+
+@media screen and (max-width: 800px) {
+	* {
+		font-size: 1.5rem;
+	}
+
+	nav ul {
+		position: fixed;
+		width: 35%;
+		height: 100vh;
+		border-radius: 8px;
+		padding: 550px 30px;
+		display: block;
+		line-height: 70px;
+		right: -100%;
+		transition: 1s;
+		background-color: #fff;
+		box-shadow: 1px 1px 10px gray;
+	}
+
+	ul li a {
+		font-weight: bold;
+		color: #9f2728;
+	}
+
+	ul li a:hover {
+		background-color: #9f2728;
+		color: #fff;
+	}
+
+	label #menu {
+		display: block;
+	}
+
+	#check:checked ~ ul {
+		right: 0px;
+	}
+
+	#check:checked ~ label #menu {
+		display: none;
+	}
+
+	#check:checked ~ label #cancel {
+		display: block;
+		color: #9f2728;
+		z-index: 1;
+	}
+
+	.nav-logo {
+		width: 70%;
+	}
+
+	.nav-logo-1 {
+		width: 100%;
+	}
+
+	.nav-logo img {
+		width: 70px;
+		height: 70px;
+	}
+
+	.about-class-imgs {
+		padding: 10px;
+		grid-template-columns: auto auto;
+	}
+
+	.header {
+		width: 80%;
+	}
+
+	.header h2 {
+		font-size: 2rem;
+	}
+
+	.header p {
+		font-size: 0.7rem;
+	}
+
+	.about {
+		padding: 10px 20px;
+	}
+
+	.about p {
+		font-size: 1rem;
+	}
+
+	.fan {
+		width: 50%;
+		padding: 0px 20px;
+	}
+
+	.fan h2 {
+		font-size: 1.2rem;
+	}
+
+	.fan ul li {
+		font-size: 0.8rem;
+	}
+	.jamoa-box {
+		justify-content: center;
+		gap: 20px;
+	}
+	.jamoa_box {
+		width: calc(100% / 2 - 10px);
+		padding: 30px;
+	}
+	.jamoa_box img {
+		width: 250px;
+		height: 250px;
+	}
+	.jamoa_box h2 {
+		font-size: 1rem;
+	}
+	.jamoa_box p {
+		font-size: 0.8rem;
+	}
+	.jamoa_box button {
+		padding: 5px 10px;
+	}
+	.jamoa_box button a {
+		font-size: 1rem;
+	}
+	.box-1 h2 {
+		font-size: 1.2rem;
+	}
+	.box-1 img {
+		width: 35px;
+		height: 35px;
+	}
+	.box-1 p {
+		font-size: 0.8rem;
+	}
+	.box-1 span {
+		font-size: 0.7rem;
+	}
+	.box-1 span a {
+		font-size: 0.7rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	* {
+		font-size: 1.2rem;
+	}
+
+	nav {
+		background-color: #8b0000;
+		z-index: 10;
+		box-shadow: 1px 1px 10px gray;
+	}
+
+	nav ul {
+		display: none;
+	}
+
+	label #menu,
+	#cancel {
+		display: none;
+	}
+
+	.nav-logo img {
+		width: 70px;
+		height: 70px;
+	}
+
+	.nav-logo {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.links {
+		width: 100%;
+		height: auto;
+		padding: 5px;
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		align-items: center;
+		justify-content: space-around;
+		position: fixed;
+		left: 0px;
+		bottom: -2px;
+		border-radius: 6px;
+		/* border-top-left-radius: 6px;
+		border-top-right-radius: 6px; */
+		background-color: #8b0000;
+	}
+
+	.link {
+		transition: 1s;
+	}
+
+	.link i {
+		width: 100%;
+		height: auto;
+		font-size: 1.8rem;
+		color: #fff;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		padding: 5px;
+		text-align: center;
+		transform: translateY(0px);
+	}
+
+	.link:hover i {
+		transition: 1s;
+		color: #8b0000;
+		background-color: #fff;
+		transform: translateY(-5px);
+	}
+
+	.link p {
+		color: #fff;
+		font-weight: bold;
+		font-size: 0.8rem;
+		text-align: center;
+	}
+
+	.nav-logo .vazirlik {
+		display: flex;
+		justify-content: center;
+	}
+
+	.nav-logo img {
+		width: 60px;
+		height: 60px;
+	}
+
+	header {
+		background-image: none;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.header-media {
+		width: 100%;
+		height: 80vh;
+		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-image: url(./image/bc-4.jpg);
+		background-color: #fff;
+		background-size: cover;
+	}
+
+	.header-media-info {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 0px 20px;
+	}
+
+	.header-media-info h2 {
+		color: #fff;
+		font-size: 1.8rem;
+		font-family: 'Times New Roman', Times, serif;
+		margin-bottom: 10px;
+	}
+
+	.header-media-info p {
+		color: #fff;
+		font-size: 0.8rem;
+		text-align: center;
+	}
+
+	.header-media img {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: cover;
+		background-color: rgba(0, 0, 0, 0.6);
+		background-blend-mode: darken;
+	}
+
+	.about-class-1 h2 {
+		color: #8b0000;
+	}
+
+	.vedio h2,
+	.yutuq_about h2 {
+		color: #8b0000;
+		font-size: 1.4rem;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.vediolar {
+		padding: 0px 20px;
+		line-height: 50px;
+	}
+
+	.about {
+		padding: 0px 10px;
+	}
+
+	.about h2 {
+		color: #8b0000;
+	}
+
+	.fan h2 {
+		color: #8b0000;
+	}
+
+	.jamoa_box {
+		width: 90%;
+		padding: 20px;
+	}
+	.jamoa_box img {
+		width: 200px;
+		height: 200px;
+	}
+	.jamoa_box h2 {
+		color: #8b0000;
+		font-size: 1.2rem;
+	}
+	.jamoa_box p {
+		font-size: 0.9rem;
+	}
+	.jamoa_box button {
+		background-color: #fff;
+		border: 1px solid #8b0000;
+		padding: 5px 10px;
+	}
+	.jamoa_box button:hover {
+		background-color: #8b0000;
+	}
+	.jamoa_box button:hover a {
+		color: #fff;
+	}
+	.jamoa_box button a {
+		color: #8b0000;
+		font-weight: bold;
+		font-size: 1rem;
+	}
+	.box-2 {
+		width: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: end;
+		text-align: end;
+	}
+	#box-11 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.vazirlik-1 {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.br {
+		display: block;
+	}
+	.header-media button {
+		margin-top: 50px;
+		background: #9f2728;
+		border: 2px solid #9f2728;
+		padding: 2px 15px;
+		border-radius: 6px;
+		transition: 0.7s;
+	}
+	.header-media button a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 0.9rem;
+	}
+	.header-media button a:hover {
+		color: #9f2728;
+		font-weight: bold;
+	}
+	.header-media button:hover {
+		scale: 1.02;
+		background-color: #fff;
+		border: none;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	* {
+		font-size: 1rem;
+	}
+
+	nav ul {
+		width: 50%;
+	}
+
+	.nav-logo img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.about-class-imgs {
+		padding: 20px;
+		grid-template-columns: auto;
+	}
+
+	.nav-logo .vazirlik {
+		width: 25%;
+		justify-content: center;
+	}
+
+	.nav-logo .vazirlik img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.fan h2 {
+		font-size: 1.1rem;
+		margin-bottom: 10px;
+		margin: auto;
+	}
+
+	.box-1 h2 {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	.box-1 img {
+		width: 30px;
+		height: 30px;
+	}
+	.box-1 p {
+		font-size: 0.9rem;
+	}
+	.box-1 span {
+		font-size: 0.8rem;
+	}
+	.box-1 span a {
+		font-size: 0.8rem;
+	}
+}
