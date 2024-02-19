@@ -321,7 +321,6 @@ label #menu,
 .jamoa_box:hover {
 	background-color: #9f2728;
 	transition: 1s;
-	box-shadow: 1px 1px 25px gray;
 }
 .jamoa_box:hover h2 {
 	color: #fff;
